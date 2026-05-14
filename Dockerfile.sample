@@ -1,0 +1,14 @@
+FROM eclipse-temurin:21-jdk AS build
+WORKDIR /app
+COPY pom.xml .
+COPY streamhub-protocol streamhub-protocol
+COPY streamhub-client streamhub-client
+COPY streamhub-sample streamhub-sample
+RUN apt-get update && apt-get install -y maven && \
+    mvn -q -pl streamhub-protocol,streamhub-client,streamhub-sample -am package -DskipTests
+
+FROM eclipse-temurin:21-jre
+WORKDIR /app
+COPY --from=build /app/streamhub-sample/target/streamhub-sample-1.0.0-SNAPSHOT.jar sample.jar
+ENV STREAMHUB_HOST=broker STREAMHUB_PORT=9092 STREAMHUB_TOPIC=events STREAMHUB_GROUP=demo-group
+ENTRYPOINT ["sh", "-c", "if [ \"$1\" = producer ]; then java -cp sample.jar com.streamhub.sample.SampleProducer; else java -cp sample.jar com.streamhub.sample.SampleConsumer; fi"]
