@@ -1,0 +1,9 @@
+com/streamhub/client/ConsumerRecords$TopicPartition.class
+com/streamhub/client/ConsumerRecords$RecordHandler.class
+com/streamhub/client/Transport.class
+com/streamhub/client/Producer$PendingRecord.class
+com/streamhub/client/ClientConfig.class
+com/streamhub/client/Consumer.class
+com/streamhub/client/AdminClient.class
+com/streamhub/client/Producer.class
+com/streamhub/client/ConsumerRecords.class
