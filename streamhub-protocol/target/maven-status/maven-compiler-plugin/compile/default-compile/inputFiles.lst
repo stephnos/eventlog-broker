@@ -1,0 +1,8 @@
+/Users/spapa/projects/software-engineering/eventlog-broker/streamhub-protocol/src/main/java/com/streamhub/protocol/AckMode.java
+/Users/spapa/projects/software-engineering/eventlog-broker/streamhub-protocol/src/main/java/com/streamhub/protocol/ApiKey.java
+/Users/spapa/projects/software-engineering/eventlog-broker/streamhub-protocol/src/main/java/com/streamhub/protocol/PartitionAssignment.java
+/Users/spapa/projects/software-engineering/eventlog-broker/streamhub-protocol/src/main/java/com/streamhub/protocol/ProtocolCodec.java
+/Users/spapa/projects/software-engineering/eventlog-broker/streamhub-protocol/src/main/java/com/streamhub/protocol/Record.java
+/Users/spapa/projects/software-engineering/eventlog-broker/streamhub-protocol/src/main/java/com/streamhub/protocol/Request.java
+/Users/spapa/projects/software-engineering/eventlog-broker/streamhub-protocol/src/main/java/com/streamhub/protocol/Response.java
+/Users/spapa/projects/software-engineering/eventlog-broker/streamhub-protocol/src/main/java/com/streamhub/protocol/TopicPartition.java
